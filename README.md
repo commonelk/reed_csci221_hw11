@@ -11,7 +11,7 @@
 
 #### **Design Decisions:**
 1. <u>ClimbChromosome class.</u>
-    + ClimbChromosome.cc could definitely be cleaner, as the repeated swaps cause a lot of repetition in the code, but what matters most is that it works. Other than that, the instructions made it mostly straightforward to write.
+    + `ClimbChromosome` could definitely be cleaner, as the repeated swaps cause a lot of repetition in the code, but what matters most is that it works. Other than that, the instructions made it mostly straightforward to write.
 2. <u>TournamentDeme class.</u>
     + In the overridden `select_parent()` in `TournamentDeme`, `std::shuffle()` was used to randomly select `P` members of `pop_`. Essentially, after shuffling `pop_`, choosing the first `P` elements gives us `P` randomly selected `Chromosome*`s. This method is slightly inefficient, but it is not too bad considering `P` is typically not much lower than `pop_.size()`.
     + To calculate `P` in `select_parent()`, we created an auxillary function called `floor_power_2` which returns the greatest integral power of two that is less than or equal to the given integer. 
