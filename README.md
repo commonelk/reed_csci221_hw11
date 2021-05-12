@@ -11,7 +11,7 @@
 
 #### **Design Decisions:**
 1. <u>ClimbChromosome class.</u>
-    + type here.
+    + ClimbChromosome.cc could definitely be cleaner, as the repeated swaps cause a lot of repetition in the code, but what matters most is that it works. Other than that, the instructions made it mostly straightforward to write.
 2. <u>TournamentDeme class.</u>
     + type here.
 
