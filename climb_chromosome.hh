@@ -9,4 +9,4 @@ public:
   {
     return new ClimbChromosome(*this); //original: return new Chromosome(*this);
   }
-}
+};
