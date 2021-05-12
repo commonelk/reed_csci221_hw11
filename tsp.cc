@@ -5,7 +5,7 @@
  */
 
 #include "cities.hh"
-#include "deme.hh"
+#include "tournament_deme.hh"
 
 #include <algorithm>
 #include <cassert>
@@ -124,7 +124,7 @@ int main(int argc, char** argv)
   assert(cities.size() > 0 && "Did you actually read the input file successfully?");
   const auto pop_size = atoi(argv[2]);
   const auto mut_rate = atof(argv[3]);
-  constexpr unsigned NUM_ITER = 1'000'000;
+  constexpr unsigned NUM_ITER = 100'000;
 
 
 //  const auto best_ordering = exhaustive_search(cities);

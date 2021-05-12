@@ -1,12 +1,13 @@
 #include "chromosome.hh"
 
 class ClimbChromosome : public Chromosome {
-public:
+    public:
 
-  virtual void mutate();
+        ClimbChromosome(const Cities* c);
 
-  virtual Chromosome* clone() const
-  {
-    return new ClimbChromosome(*this); //original: return new Chromosome(*this);
-  }
+        virtual Chromosome* clone() const {
+            return new ClimbChromosome(*this); //original: return new Chromosome(*this);
+        }
+
+        virtual void mutate() override;
 };
