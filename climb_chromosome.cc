@@ -1,5 +1,11 @@
 #include "climb_chromosome.hh"
 
+ClimbChromosome::ClimbChromosome()
+  : ChromosomeChromosome(const Cities* cities_ptr)
+  {
+
+  } //I don't have the constructor finished. I'll take another look after my test.
+
 
 void
 ClimbChromosome::mutate(){
